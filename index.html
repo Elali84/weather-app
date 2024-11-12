@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>SkyCast</h1>
+        <div class="input-group">
+            <input type="text" id="city" class="input-field" placeholder="Introduce la ciudad">
+        </div>
+        <button id="btn" class="btn-submit">Consultar Clima</button>
+        
+        <div id="resultado" class="weather-result">
+            <img id="weather-icon" src="" alt="Ícono del clima" style="display:none;">
+            <h2 id="city-name"></h2>
+            <h1 id="temperature"></h1>
+            <h4 id="weather-description"></h4>
+        </div>
+        <div id="map" style="height: 300px; width: 100%;"></div>
+    </div>
+    <script src="datos.js"></script>
+</body>
+</html>
